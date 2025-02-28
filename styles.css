@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-color:  #1e3d58;
+    color: #fff;
+}
+
+/* Body */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+/* General Navigation Styles */
+nav {
+    display: flex;
+    background-color:  #1e3d58;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+/* margin-left: 1200px; */
+}
+
+nav ul li {
+    margin-left: 50px;
+    text-decoration: underline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Hamburger Icon Styles */
+.burger {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+.burger .line {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 4px;
+    border-radius: 5px;
+}
+
+/* Mobile Menu Styles */
+#nav-menu {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    /* Hide regular navigation on mobile */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #1e3d58;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    /* Display hamburger icon */
+    .burger {
+        display: flex;
+    }
+
+    /* Show menu when hamburger icon is clicked */
+    nav.open ul {
+        display: flex;
+    }
+}
+
+
+/* Header
+header {
+    background-color: #1e3d58;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+} */
+
+/* Hero Section */
+.hero {
+    background: #7ec8e3;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.hero .btn {
+    background-color: #1e3d58;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.hero .btn:hover {
+    background-color: #165e7c;
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+/* Image Section */
+.parent {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+#pop, #pop2 {
+    width: 48%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#pop img, #pop2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Features Section */
+.features {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+}
+
+.features h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.feature-item h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 16px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #fff;
+    padding: 60px 20px;
+}
+
+.contact h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.contact p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #1e3d58;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.contact button:hover {
+    background-color: #165e7c;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3d58;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* Tablet Portrait or Smaller Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+    /* Hero Section */
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* Parent (image section) */
+    .parent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pop, #pop2 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    /* Features Section */
+    .features h2 {
+        font-size: 28px;
+    }
+
+    .feature-item h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Hero Section */
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    /* Parent */
+    .parent {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #pop, #pop2 {
+        width: 80%;
+    }
+
+    /* Contact Section */
+    .contact form {
+        width: 90%;
+    }
+}
+
+/* Very Small Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Hero Section */
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+    .hero .btn {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
+    /* About Section */
+    .about h2 {
+        font-size: 24px;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+
+    /* Parent */
+    .parent {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #pop, #pop2 {
+        width: 100%;
+    }
+
+    /* Features Section */
+    .features h2 {
+        font-size: 24px;
+    }
+
+    .feature-item h3 {
+        font-size: 18px;
+    }
+
+    /* Contact Section */
+    .contact input, .contact textarea {
+        font-size: 14px;
+    }
+
+    .contact button {
+        font-size: 14px;
+    }
+}
+

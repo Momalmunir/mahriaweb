@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mahria Authentic Liquid - The best dishwashing liquid for sparkling clean dishes.">
+    <title>Mahria Authentic Liquid - Dishwashing Liquid</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <!-- <header>
+        <div class="container">
+            <h1>Mahria Authentic Liquid</h1>
+            <nav>
+                <ul>
+                            <li><a href="https://web.whatsapp.com/" target="_blank"><img src="./icons8-whatsapp.gif" alt=""></a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+         
+                </ul>
+            </nav>
+        </div>
+    </header> -->
+    <header>
+        <div class="container">
+            <h1>Mahria Authentic Liquid</h1>
+            <!-- Hamburger Icon for Mobile -->
+            <div class="burger" id="burger-icon">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="https://chat.whatsapp.com/L3A8ngHNjBh1cY8ryxjNfM" target="_blank"><img src="./icons8-whatsapp.gif" alt=""></a>
+                    </li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Get Sparkling Clean Dishes Every Time</h2>
+            <p>Introducing Mahria Authentic Liquid – Powerful, effective, and eco-friendly dishwashing liquid.</p>
+            <a href="#contact" class="btn">Buy Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Mahria Authentic Liquid</h2>
+            <p>Welcome to Mahria Authentic, your trusted partner for a cleaner, healthier home. We're passionate about
+                providing effective and eco-friendly cleaning solutions, which is why we created our flagship product:
+                Mahria Authentic Liquid Dishwasher. Our mission is to empower households to make a positive impact on
+                the environment while maintaining impeccable cleanliness. With Mahria Authentic, you can trust that your
+                dishes are sparkling clean, and your conscience is clear. Learn more about our story, values, and
+                commitment to sustainability.</p>
+
+        </div>
+        <div class="parent">
+            <div class="animate__animated animate__fadeInUp" id="pop">
+                <img src="./imgae1.jpg" alt="Image 1" width="400px" height="400px">
+            </div>
+            <div class="animate__animated animate__fadeInUp" id="pop2">
+                <img src="./image2.jpg" alt="Image 2" width="400px" height="400px">
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="feature-item">
+                <h3>Powerful Cleaning</h3>
+                <p>Removes tough grease and food residues with ease.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Eco-Friendly</h3>
+                <p>Made with biodegradable ingredients, safe for the environment.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Gentle on Hands</h3>
+                <p>Formulated to keep your hands soft and moisturized after each use.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or want to place an order, feel free to reach out.</p>
+            <!-- <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form> -->
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="143704e3-5c29-4345-b3ef-30df2e961632">
+
+                <!-- Form Inputs. Each input must have a name="" attribute -->
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+
+                <!-- Honeypot Spam Protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <!-- Custom Confirmation / Success Page -->
+                <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+                <button type="submit">Submit Form</button>
+
+            </form>
+            <!-- <a href="https://web.whatsapp.com/" target="_blank"><img src="./icons8-whatsapp.gif" alt=""></a> -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mahria Authentic Liquid. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    const burgerIcon = document.getElementById('burger-icon');
+    const navMenu = document.getElementById('nav-menu');
+
+    // Toggle navigation menu when burger icon is clicked
+    burgerIcon.addEventListener('click', () => {
+        navMenu.classList.toggle('open');
+    });
+</script>
+
+</html>
